@@ -1,0 +1,203 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-width: 320px; /* Минимальная ширина страницы */
+    overflow-x: auto; /* Включаем горизонтальный скролл, если экран меньше */
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23808080' fill-opacity='0.11' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+}
+
+article {
+    background-color: transparent;
+}
+
+svg {
+    transform: translate(0, 6px);
+    width: 20px;
+    height: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-bottom: 20px; /* Убираем отступ слева */
+
+  }
+
+
+#sub_text {
+    font-size: 14px;
+    word-break: keep-all;
+}
+
+  
+
+.photo_container {
+    max-width: 290px;
+    max-height: 290px;
+    padding: 10px;
+}
+
+.info_container {
+    padding: 10px;
+}
+
+.photo {
+    max-width: 100%; /* Ограничиваем максимальную ширину */
+    max-height: 100%; /* Ограничиваем максимальную высоту */
+    width: 100%; /* Делаем адаптивным */
+    height: auto; /* Сохраняем пропорции */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.container_main {
+    max-width: calc(100% - 100px);
+    /* padding: 0 25px; - ломает верх */
+    margin: 0 auto;
+}
+
+
+.top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(167, 167, 167, 0.7);
+    padding: 0;
+}
+
+.top_left, .top_right  {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-left: 1px solid rgb(167, 167, 167, 0.7);
+    border-right: 1px solid rgb(167, 167, 167, 0.7);
+    align-self: stretch;
+    align-items: center;
+    justify-items: center;
+  
+}
+
+.top_center {
+    background-color: #fff;
+    /* min-width: 214px; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center_left, .center_right {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40px;
+    flex-shrink: 0;
+    border-left: 1px solid rgb(167, 167, 167, 0.7);
+    border-right: 1px solid rgb(167, 167, 167, 0.7);
+    min-height: 100vh;
+
+}
+
+.center_main {
+    background-color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 19px 19px;
+    padding: 10px 0;
+    flex-grow: 1;     
+    display: flex;
+
+}
+
+@media (max-width: 800px) {
+    .center_main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .centerMainLeft {
+        min-width: unset;
+        border-right: none !important;
+        border-bottom: 1px solid rgb(167, 167, 167, 0.7);
+        padding: 0px 10px;
+    }
+}
+
+.centerMainLeft {
+    min-width: 40%;
+    border-right: 1px solid rgb(167, 167, 167, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centerMainRight {
+    min-width: 60%;
+    justify-content: center;
+    /* border-left: 1px solid rgb(167, 167, 167, 0.7); возможно лишнее */
+}
+
+.frame_1 {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 50px;
+    border-left: 1px solid rgb(0, 0, 0, 0.5);  
+    border-right: 1px solid rgb(0, 0, 0, 0.5);  
+    border-bottom: 1px solid rgb(0, 0, 0, 0.5);  
+    margin: 20px 20px 25px;
+    padding: 10px;
+    word-wrap: break-word;
+    
+}
+
+.frame_title {
+    background-color: transparent;
+    color: rgb(0, 0, 0, 0.7); ;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 10px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.frame_1::before, .frame_1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: calc((100% - var(--title-width)) / 2);
+    height: 1px;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.frame_1::before {
+    left: 0;
+}
+
+.frame_1::after {
+    right: 0;
+}
+
+
