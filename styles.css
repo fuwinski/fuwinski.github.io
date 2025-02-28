@@ -160,7 +160,12 @@ ul {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 415px) {
+
+    .container_main {
+        max-width: calc(100% - 10px);
+        margin: 0 auto;
+    }
     .center_main {
         display: flex;
         flex-direction: column;
@@ -172,6 +177,8 @@ ul {
         border-bottom: 1px solid rgb(167, 167, 167, 0.7);
         padding: 0px 10px;
     }
+
+
 } 
 
 .centerMainLeft {
