@@ -98,9 +98,16 @@ ul {
 
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 0.6fr 0.2fr 0.2fr;
+    grid-template-rows: 0.4fr 0.2fr 0.2fr 0.2fr;
     border-right: 1px solid rgb(167, 167, 167, 0.7);
     padding: 10px;
+    /* scrolling */
+    overflow-y: auto;
+    scrollbar-width: none; /* Для Firefox */
+}
+
+.mid-c-l::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari */
 }
 
 .profile-wrapper {
@@ -143,7 +150,6 @@ ul {
 
 .contact {
     display: flex;
-    /* font-size: 14px; */
     word-break: break-all;
 }
 
@@ -151,6 +157,17 @@ ul {
     grid-row: 3;
     grid-column: 2 / 7;
     padding-top: 10px;
+}
+
+.languages-wrapper{
+    grid-row: 4;
+    grid-column: 2 / 7;
+    padding-top: 10px;
+}
+
+.language {
+    display: flex;
+    word-break: break-all;
 }
 
 .text-name {
@@ -161,7 +178,7 @@ ul {
     grid-row: 3;
 }
 
-.text-name, .text-pos, .text-cont, .text-edu  {
+.text-name, .text-pos, .text-cont, .text-edu, .text-lang  {
     padding-bottom: 10px;
 }
 
@@ -228,9 +245,10 @@ ul {
 
 
 @media (max-width:911px) { /* max height - 760 */
-    .mid-c {
+    /* .mid-c {
         grid-template-columns: 0.5fr 0.5fr;
-    }
+    } */
+     /*Лучше поменять fontsize для media*/
     .profile-wrapper, .contacts-wrapper, .education-wrapper {
         grid-column: 1 / 8;
     }
