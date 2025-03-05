@@ -1,0 +1,14 @@
+[
+    {
+        "type" : "Высшее",
+        "institution" : "МГАВМиБ – МВА имени К.И. Скрябина",
+        "grad-year" : "2020",
+        "specialization" : "Ветеринарный врач"
+    },
+    {
+        "type" : "Повышение квалификации",
+        "institution" : "Nordic IT School",
+        "grad-year" : "2025",
+        "specialization" : "QA Engineer / Tester"
+    }
+]
