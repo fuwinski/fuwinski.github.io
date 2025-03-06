@@ -19,6 +19,7 @@ fetch('data/contacts.json')
         const textElement = document.createElement('span');
         textElement.classList.add('text');
         textElement.textContent = contact.text;
+        textElement.innerHTML = contact.text;
         contactElement.appendChild(textElement);
 
         // Добавляем контакт в список
