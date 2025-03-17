@@ -1,18 +1,6 @@
 [
     {
-        "name" : "example-one",
-        "text" : "”I could tell you my adventures–beginning from this morning,” said Alice a little timidly: ”but it’s no use going back to yesterday, because I was a different person then.”"
-    },
-    {
-        "name" : "example-two",
-        "text" : "If I had a world of my own, everything would be nonsense. Nothing would be what it is, because everything would be what it isn't. And contrariwise, what it is, it wouldn't be. And what it wouldn't be, it would. You see?"
-    },
-    {
-        "name" : "example-three",
-        "text" : "“If everybody minded their own business,” the Duchess said, in a hoarse growl, “the world would go round a deal faster than it does.”"
-    },
-    {
-        "name" : "example-four",
-        "text" : "«Всякий работник, будь то писатель, художник, композитор, учёный, деятель науки и культуры, не может создавать, оторвавшись от общественной работы, от жизни. Без впечатлений, восторгов, вдохновенья, без жизненного опыта - нет творчества. Без творческих поисков нет подлинного искусства.»"
+        "name" : "О СЕБЕ",
+        "text" : "Добрый день! Меня зовут Юрий и я начинающий QA специалист. Получение новых знаний - это моя искренняя страсть. Регулярно читаю образовательные статьи, изучаю материалы с конференций и применяю полученные инсайты в своих проектах. Убеждён, что для успешного выполнения любой задачи недостаточно просто знать алгоритм её решения - важно также понимать контекст, в котором она существует, и учитывать все сопутствующие факторы. Считаю, что грамотное использование технологий искусственного интеллекта определяет будущее. И это будущее уже наступило - мы не только его часть, но и активные участники, что вдохновляет и мотивирует."
     }
 ]
