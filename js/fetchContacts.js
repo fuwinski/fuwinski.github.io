@@ -6,7 +6,7 @@ fetch('data/contacts.json')
     contacts.forEach(contact => {
         const contactElement = document.createElement('div');
         contactElement.classList.add('contact');
-
+        
         const iconElement = document.createElement('div');
         iconElement.classList.add('icon');
         iconElement.innerHTML = contact.icon;
